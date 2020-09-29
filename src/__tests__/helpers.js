@@ -27,14 +27,14 @@ test('jika qty -3, maka keluarnya jadi 1', () => {
     expect(absoluteQty(-3)).toBe(1);
 });
 
-test('Subtotal dari 50000 dn qty 2 adalah 100000', () => {
-    expect(Subtotal(50000, 2)).toBe(100000);
+test('Subtotal dari 15000 dn qty 2 adalah 30000', () => {
+    expect(Subtotal(15000, 2)).toBe(30000);
 });
 
-test('Diskon kode 25 dari barang berharga 50k dan qty 2 (total 100k) adalah 25000', () => {
-    expect(Diskon(50000, 2, "25")).toBe(25000);
+test('Diskon kode 50 dari barang berharga 50k dan qty 2 (total 100k) adalah 50000', () => {
+    expect(Diskon(50000, 2, "50")).toBe(50000);
 });
 
-test('Grandtotal dari barang dengan harga 50000 qty 2 diskon 25 adalah 75000', () => {
-    expect(grandTotal(50000, 2, "25")).toBe(75000);
+test('Grandtotal dari barang dengan harga 50000 qty 2 diskon 50 adalah 50000', () => {
+    expect(grandTotal(50000, 2, "50")).toBe(50000);
 });
